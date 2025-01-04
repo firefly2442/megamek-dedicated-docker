@@ -1,0 +1,13 @@
+services:
+  megamekdedicated:
+    build:
+      context: ./
+      args:
+        DOCKER_BUILDKIT: 1
+    hostname: megamekdedicated
+    restart: unless-stopped
+    ports:
+      - "2346:2346/tcp"
+    environment:
+      SERVER_PASSWORD: ${SERVER_PASSWORD}
+      SERVER_PORT: ${SERVER_PORT}
