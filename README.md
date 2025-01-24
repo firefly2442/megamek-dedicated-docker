@@ -35,6 +35,14 @@ docker logs -f <id>
 docker compose down -v
 ```
 
+## Helpful Commands
+
+Become the Game Master (GM)
+
+```shell
+/gm
+```
+
 ## References
 
 * [https://megamek.org/wiki/ded_servers.html](https://megamek.org/wiki/ded_servers.html)
